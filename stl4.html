@@ -1,0 +1,125 @@
+<!Doctype html>
+
+<head>
+	<title>
+		Artificial Intelligence Vs. Human Intelligence
+	</title>
+	<link rel="stylesheet" href="stylehome.css" />
+	<script src="scripthome.js"></script>
+</head>
+
+<body>
+		<div class="leftnavbar">
+			<div class="header">
+				<div id="name">
+					<a href="home.html" style="color: black;
+    text-decoration: dashed;"> WeBlog </a>
+				</div>
+				<div id="form">
+					<form>
+						<input type="type" id="searchbar" placeholder="Search"></input>
+					</form>
+				</div>
+			</div>
+
+			<a href="home.html" style="color: black;
+    text-decoration: dashed;"><button id="Home" type="button">Home</button></a>
+			<button id="Blogs" type="button" onclick="Blogs()">Category</button>
+			<div id="menu" style="display:none">
+				<a href="home.html#mainTECH"><button id="tech" type="button">Tech</button></a>
+				<a href="home.html#mainDSA"><button id="DSA" type="button">DSA</button></a>
+				<a href="home.html#mainSTL"><button id="STL" type="button">STL</button></a>
+				<a href="home.html#mainOOPs"><button id="OOPs" type="button">OOPs</button></a>
+				</div>
+			<a href="http://localhost/WeBlog-main/contact.php"><button id="Contact" type="button">Contact</button></a>
+			<a href="privacy.html"><button id="Privacy" type="button">Privacy</button></a>
+			<a href="about.html"><button id="About" type="button">About</button></a>
+			<a href="terms and condition.html"><button id="tnc" type="button">Terms and conditions</button></a>
+			
+		</div>
+	<div class="info_page">
+<h1 align="CENTER">How to use the STL documentation</h1>
+<p>This site documents all of the components (classes, functions, and concepts) in the SGI Standard Template Library. Each page describes a single component, and also includes links to related components.</p>
+<p>This documentation assumes a general familiarity with C++, especially with C++ templates. Additionally, you should read&nbsp;<a href="https://www.boost.org/sgi/stl/stl_introduction.html">Introduction to the Standard Template Library</a> before proceeding to the pages that describe individual components: the introductory page defines several terms that are used throughout the documentation.</p>
+<h2>Classification of STL components</h2>
+<p>The STL components are divided into six broad categories on the basis of functionality:&nbsp;<em>Containers</em>,&nbsp;<em>Iterators</em>,&nbsp;<em>Algorithms</em>,&nbsp;<em>Function Objects</em>,&nbsp;<em>Utilities</em>, and&nbsp;<em>Allocators</em>; these categories are defined in the&nbsp;<a href="https://www.boost.org/sgi/stl/stl_introduction.html">Introduction</a>, and the&nbsp;<a href="https://www.boost.org/sgi/stl/table_of_contents.html">Table of Contents</a> is organized according to them.</p>
+<p>The STL documentation contains two indices. One of them, the&nbsp;<a href="https://www.boost.org/sgi/stl/stl_index.html">Main Index</a>, lists all components in alphabetical order. The other, the&nbsp;<a href="https://www.boost.org/sgi/stl/stl_index_cat.html">Divided Index</a>, contains a separate alphabetical listing for each category. The Divided Index includes one category that is not present in the Table of Contents:&nbsp;<em>Adaptors</em>. An adaptor is a class or a function that transforms one interface into a different one. The reason that adaptors don&apos;t appear in the Table of Contents is that no component is merely an adaptor, but always an adaptor and something else;&nbsp;<a href="https://www.boost.org/sgi/stl/stack.html">stack</a>, for example, is a container and an adaptor. Accordingly,&nbsp;<a href="https://www.boost.org/sgi/stl/stack.html">stack</a> appears in two different places in the Divided Index. There are several other components that appear in the Divided Index in more than one place.</p>
+<p>The STL documentation classifies components in two ways.</p>
+<ol>
+   <li>
+      <em>Categories</em> are a classification by functionality. The categories are:
+      <ul>
+         <li>Container</li>
+         <li>Iterator</li>
+         <li>Algorithm</li>
+         <li>Function Object</li>
+         <li>Utility</li>
+         <li>Adaptor</li>
+         <li>Allocator.</li>
+      </ul>
+   </li>
+   <li>
+      <em>Component types</em> are a structural classification: one based on what kind of C++ entity (if any) a component is. The component types are:
+      <ul>
+         <li>Type (<em>i.e.</em> a&nbsp;struct&nbsp;or&nbsp;class)</li>
+         <li>Function</li>
+         <li>Concept (as defined in the&nbsp;<a href="https://www.boost.org/sgi/stl/stl_introduction.html">Introduction</a>).</li>
+      </ul>
+   </li>
+</ol>
+<p><br></p>
+<p>These two classification schemes are independent, and each of them applies to every STL component;&nbsp;<a href="https://www.boost.org/sgi/stl/Vector.html">vector</a>, for example, is a&nbsp;<em>type</em> whose category is&nbsp;<em>Containers</em>, and&nbsp;<strong><a href="https://www.boost.org/sgi/stl/ForwardIterator.html">Forward Iterator</a></strong> is a&nbsp;<em>concept</em> whose category is&nbsp;<em>Iterators</em>.</p>
+<p>Both of these classification schemes appear at the top of every page that documents an STL component. The upper left corner identifies the the component&apos;s category as&nbsp;<em>Containers</em>,<em>&nbsp;Iterators</em>,&nbsp;<em>Algorithms</em>,&nbsp;<em>Function Objects</em>,&nbsp;<em>Utilities</em>,&nbsp;<em>Adaptors</em>, or&nbsp;<em>Allocators</em>, and the upper right corner identifies the component as a&nbsp;<em>type</em>, a&nbsp;<em>function</em>, or a&nbsp;<em>concept</em>.</p>
+<h2>Using the STL documentation</h2>
+<p>The STL is a&nbsp;<em>generic</em> library: almost every class and function is a template. Accordingly, one of the most important purposes of the STL documentation is to provide a clear description of which types may be used to instantiate those templates. As described in the&nbsp;<a href="https://www.boost.org/sgi/stl/stl_introduction.html">Introduction</a>, a&nbsp;<em>concept&nbsp;</em>is a generic set of requirements that a type must satisfy: a type is said to be a&nbsp;<em>model of</em> a concept if it satisfies all of that concept&apos;s requirements.</p>
+<p>Concepts are used very heavily in the STL documentation, both because they directly express type requirements, and because they are a tool for organizing types conceptually. (For example, the fact that&nbsp;<a href="https://www.boost.org/sgi/stl/ostream_iterator.html">ostream_iterator</a> and&nbsp;<a href="https://www.boost.org/sgi/stl/insert_iterator.html">insert_iterator</a> are both models of&nbsp;<strong><a href="https://www.boost.org/sgi/stl/OutputIterator.html">Output Iterator</a></strong> is an important statement about what those two classes have in common.) Concepts are used for the documentation of both&nbsp;<em>types</em> and&nbsp;<em>functions</em>.</p>
+<h3>The format of a&nbsp;<em>concept&nbsp;</em>page</h3>
+<p>A page that documents a&nbsp;<em>concept</em> has the following sections.</p>
+<ul>
+   <li><strong>Summary:</strong> A description of the concept&apos;s purpose.</li>
+   <li><strong>Refinement of:</strong> A list of other concepts that this concept&nbsp;<em>refines</em>, with links to those concepts.</li>
+   <li><strong>Associated types:</strong> A concept is a set of requirements on some type. Frequently, however, some of those requirements involve some other type. For example, one of the<strong>&nbsp;<a href="https://www.boost.org/sgi/stl/UnaryFunction.html">Unary Function</a></strong> requirements is that a&nbsp;<strong><a href="https://www.boost.org/sgi/stl/UnaryFunction.html">Unary Function</a></strong> must have an&nbsp;<em>argument type</em>; if&nbsp;F&nbsp;is a type that models&nbsp;<strong><a href="https://www.boost.org/sgi/stl/UnaryFunction.html">Unary Function</a></strong> and&nbsp;f&nbsp;is an object of type&nbsp;F, then, in the expression&nbsp;f(x),&nbsp;x&nbsp;must be of&nbsp;F&apos;s argument type. If a concept does have any such associated types, then they are defined in this section.</li>
+   <li><strong>Notation</strong>: The next three sections,&nbsp;<strong>definitions</strong>,&nbsp;<strong>valid expressions</strong>, and&nbsp;<strong>expression semantics</strong>, present expressions involving types that model the concept being defined. This section defines the meaning of the variables and identifiers used in those expressions.</li>
+   <li><strong>Definitions</strong>: Some concepts, such as&nbsp;<strong><a href="https://www.boost.org/sgi/stl/LessThanComparable.html">LessThan Comparable</a></strong>, use specialized terminology. If a concept requires any such terminology, it is defined in this section.</li>
+   <li><strong>Valid Expressions</strong>: A type that models a concept is required to support certain operations. In most cases, it doesn&apos;t make sense to describe this in terms of specific functions or member functions: it doesn&apos;t make any difference, for example, whether a type that models&nbsp;<strong><a href="https://www.boost.org/sgi/stl/InputIterator.html">Input Iterator</a></strong> uses a global function or a member function to provide&nbsp;operator++. This section lists the expressions that a type modeling this concept must support. It includes any special requirements (if any) on the types of the expression&apos;s operands, and the expression&apos;s return type (if any).</li>
+   <li><strong>Expression Semantics:</strong> The previous section,&nbsp;<strong>valid expressions</strong>, lists which expressions involving a type must be supported; it doesn&apos;t, however, define the meaning of those expressions. This section does: it lists the semantics, preconditions, and postconditions for the expressions defined in the previous section.</li>
+   <li><strong>Complexity Guarantees</strong>: In some cases, the run-time complexity of certain operations is an important part of a concept&apos;s requirements. For example, one of the most significant distinctions between a&nbsp;<strong><a href="https://www.boost.org/sgi/stl/BidirectionalIterator.html">Bidirectional Iterator</a></strong> and a&nbsp;<strong><a href="https://www.boost.org/sgi/stl/RandomAccessIterator.html">Random Access Iterator</a></strong> is that, for random access iterators, expressions like&nbsp;p + n&nbsp;take constant time. Any such requirements on run-time complexity are listed in this section.</li>
+   <li><strong>Invariants:</strong> Many concepts require that some property is always true for objects of a type that models the concept being defined. For example,&nbsp;<strong><a href="https://www.boost.org/sgi/stl/LessThanComparable.html">LessThan Comparable</a></strong> imposes the requirement of&nbsp;<em>transitivity</em>: if&nbsp;x &lt; y&nbsp;and&nbsp;y &lt; z, then&nbsp;x &lt; z. Some such properties are &quot;axioms&quot; (that is, they are independent of any other requirements) and some are &quot;theorems&quot; (that is, they follow either from requirements in the&nbsp;<strong>expression semantics</strong> section or from other requirements in the&nbsp;<strong>invariants</strong> section).</li>
+   <li><strong>Models</strong>: A list of examples of types that are models of this concept. Note that this list is not intended to be complete: in most cases a complete list would be impossible, because there are an infinite number of types that could model the concept.</li>
+   <li><strong>Notes</strong>: Footnotes (if any) that are referred to by other parts of the page.</li>
+   <li><strong>See Also</strong>: Links to other related pages.</li>
+</ul>
+<h3>The format of a&nbsp;<em>type&nbsp;</em>page</h3>
+<p>A page that documents a&nbsp;<em>type</em> has the following sections.</p>
+<ul>
+   <li><strong>Description</strong>. A summary of the type&apos;s properties.</li>
+   <li><strong>Example of use</strong>: A code fragment involving the type.</li>
+   <li><strong>Definition</strong>: A link to the source code where the type is defined.</li>
+   <li><strong>Template parameters</strong>: Almost all STL structs and classes are templates. This section lists the name of each template parameter, its purpose, and its default value (if any).</li>
+   <li><strong>Model of</strong>: A list of the concepts that this type is a model of, and links to those concepts. Note that a type may be a model of more than one concept:&nbsp;<a href="https://www.boost.org/sgi/stl/Vector.html">vector</a>, for example, is a model of both&nbsp;<strong><a href="https://www.boost.org/sgi/stl/RandomAccessContainer.html">Random Access Container</a></strong> and&nbsp;<strong><a href="https://www.boost.org/sgi/stl/BackInsertionSequence.html">Back Insertion Sequence</a></strong>. If a type is a model of two different concepts, that simply means that it satisfies the requirements of both.</li>
+   <li><strong>Type requirements</strong>: The template parameters of a class template usually must satisfy a set of requirements. Many of these can simply be expressed by listing which concept a template parameter must conform to, but some type requirements are slightly more complicated, and involve a relationship between two different template parameters.</li>
+   <li><strong>Public base classes</strong>: If this class inherits from any other classes, they are listed in this section.</li>
+   <li><strong>Members</strong>: A list of this type&apos;s nested types, member functions, member variables, and associated non-member functions. In most cases these members are simply listed, rather than defined: since the type is a model of some concept, detailed definitions aren&apos;t usually necessary. For example,&nbsp;<a href="https://www.boost.org/sgi/stl/Vector.html">vector</a> is a model of&nbsp;<strong><a href="https://www.boost.org/sgi/stl/Container.html">Container</a></strong>, so the description of the member function&nbsp;begin()&nbsp;in the&nbsp;<strong><a href="https://www.boost.org/sgi/stl/Container.html">Container</a></strong> page applies to&nbsp;<a href="https://www.boost.org/sgi/stl/Vector.html">vector</a>, and there is no need to repeat it in the&nbsp;<a href="https://www.boost.org/sgi/stl/Vector.html">vector</a> page. Instead, the&nbsp;<strong>Members</strong> section provides a very brief description of each member and a link to whatever page defines that member more fully.</li>
+   <li><strong>New Members:</strong> A type might have some members that are not part of the requirements of any of the concepts that it models. For example,&nbsp;<a href="https://www.boost.org/sgi/stl/Vector.html">vector</a> has a member function called&nbsp;capacity(), which is not part of the&nbsp;<strong><a href="https://www.boost.org/sgi/stl/RandomAccessContainer.html">Random Access Container</a></strong> or&nbsp;<strong><a href="https://www.boost.org/sgi/stl/BackInsertionSequence.html">Back Insertion Sequence</a></strong> requirements. These members are defined in the&nbsp;<strong>New members</strong> section.</li>
+   <li><strong>Notes</strong>: Footnotes (if any) that are referred to by other parts of the page.</li>
+   <li><strong>See Also</strong>: Links to other related pages.</li>
+</ul>
+<h3>The format of a&nbsp;<em>function&nbsp;</em>page</h3>
+<p>A page that documents a&nbsp;<em>function</em> has the following sections.</p>
+<ul>
+   <li><strong>Prototype:</strong> the function&apos;s declaration.</li>
+   <li><strong>Description:</strong> A summary of what the function does.</li>
+   <li><strong>Definition</strong>: A link to the source code where the function is defined.</li>
+   <li><strong>Requirements on types:</strong> Most functions in the STL are function templates. This section lists the requirements that must be satisfied by the function&apos;s template parameters. Sometimes the requirements can simply be expressed by listing which concept a template parameter must conform to, but sometimes they are more complicated and involve a relationship between two different template parameters. In the case of&nbsp;<a href="https://www.boost.org/sgi/stl/find.html">find</a>, for example, the requirements are that the parameter&nbsp;InputIterator&nbsp;is a model of&nbsp;<strong><a href="https://www.boost.org/sgi/stl/InputIterator.html">Input Iterator</a></strong>, that the parameter&nbsp;EqualityComparable&nbsp;is a model of&nbsp;<strong><a href="https://www.boost.org/sgi/stl/EqualityComparable.html">Equality Comparable</a></strong>, and that comparison for equality is possible between objects of type&nbsp;EqualityComparable&nbsp;and objects of&nbsp;InputIterator&apos;s value types.</li>
+   <li><strong>Preconditions:</strong> Functions usually aren&apos;t guaranteed to yield a well-defined result for any possible input, but only for valid input; it is an error to call a function with invalid input. This section describes the conditions for validity.</li>
+   <li><strong>Complexity:</strong> Guarantees on the function&apos;s run-time complexity. For example,&nbsp;<a href="https://www.boost.org/sgi/stl/find.html">find</a>&apos;s run-time complexity is linear in the length of the input range.</li>
+   <li><strong>Example of use:</strong> A code fragment that illustrates how to use the function.</li>
+   <li><strong>Notes</strong>: Footnotes (if any) that are referred to by other parts of the page.</li>
+   <li><strong>See Also</strong>: Links to other related pages.</li>
+</ul>
+                                                                                               
+                                                                                            
+</div>
+</body>
+
+</html>

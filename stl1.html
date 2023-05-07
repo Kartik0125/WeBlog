@@ -1,0 +1,105 @@
+<!Doctype html>
+
+<head>
+	<title>
+		Components Of STL
+	</title>
+	<link rel="stylesheet" href="stylehome.css" />
+	<script src="scripthome.js"></script>
+</head>
+
+<body>
+		<div class="leftnavbar">
+			<div class="header">
+				<div id="name">
+					<a href="home.html" style="color: black;
+    text-decoration: dashed;"> WeBlog </a>
+				</div>
+				<div id="form">
+					<form>
+						<input type="type" id="searchbar" placeholder="Search"></input>
+					</form>
+				</div>
+			</div>
+
+			<a href="home.html" style="color: black;
+    text-decoration: dashed;"><button id="Home" type="button">Home</button></a>
+			<button id="Blogs" type="button" onclick="Blogs()">Category</button>
+			<div id="menu" style="display:none">
+				<a href="home.html#mainTECH"><button id="tech" type="button">Tech</button></a>
+				<a href="home.html#mainDSA"><button id="DSA" type="button">DSA</button></a>
+				<a href="home.html#mainSTL"><button id="STL" type="button">STL</button></a>
+				<a href="home.html#mainOOPs"><button id="OOPs" type="button">OOPs</button></a>
+				</div>
+			<a href="http://localhost/WeBlog-main/contact.php" ><button id="Contact" type="button">Contact</button></a>
+			<a href="privacy.html"><button id="Privacy" type="button">Privacy</button></a>
+			<a href="about.html"><button id="About" type="button">About</button></a>
+			<a href="terms and condition.html"><button id="tnc" type="button">Terms and conditions</button></a>
+			
+		</div>
+	<div class="info_page">
+
+        <h1>Components Of STL</h1>
+           <h2> STL mainly consists of the following components which are mentioned below:</h2>
+            
+            <h3>#1) Containers</h3>
+            A container is a collection of objects of a particular type of data structure. In STL, we have various types of container classes like Array, vector, queue, deque, list, map, set, etc. These containers are generic in nature and are implemented as class templates.</p>
+            
+            <p>Containers are dynamic in nature and can be used to hold various types of objects.</p>
+            
+            <h3>#2) Algorithms</h3>
+            Algorithms are the methods or functions that act on containers. By using algorithms provided by STL, we can have methods to search, sort, modify, transform or initialize the contents of container class objects.</p>
+            
+            <p>Algorithms provided by STL have built-in functions that can directly operate on complex data structure instead of having to write the algorithms ourselves.</p>
+            
+            <p>For Example, reverse() function in STL can be used to reverse the linked list.</p>
+            
+            <h3>#3) Iterators</h3>
+            Iterators are the very important and distinguishing feature of STL. Iterators are the constructs that are used to traverse through the container objects. Similar to indexes that we use to step through the arrays, Iterators act on container class objects and can be used to step through the data.</p>
+            
+            <h2>Containers</h2>
+            Containers store objects and data. They are basically template-based generic classes.</p>
+            
+            <p>Containers in STL are divided into the following types:</p>
+            
+            <h3>#1) Sequential Containers</h3>
+            Containers the can be accessed in a sequential or linear manner are said to be sequential containers.</p>
+            
+            <p>Arrays, Vectors, Lists, Deques are the STL containers that store data linearly and can be accessed in a sequential manner.</p>
+            
+            <h3>#2) Associative Containers</h3>
+            Associative containers are containers that implement sorted data structures. These containers are fast to search. Some of the Examples of associative containers are Map, Set, MultiMap, Multiset, etc. These containers are usually implemented in a key/value pair fashion.</p>
+            
+            <h3>#3) Container Adopters</h3>
+            Container adopters are sequential containers, however, they are implemented by providing a different interface. Thus containers like a queue, deque, stack, and priority-queue are all classified as container adopters.</p>
+            
+            <h2>Iterators</h2>
+            Iterators are constructs that we use to traverse or step through containers in STL. Iterators are very important in STL as they act as a bridge between algorithms and containers. Iterators always point to containers and in fact algorithms actually, operate on iterators and never directly on containers.</p>
+            
+            <h3>Iterators are of following types:</h3>
+            
+            <p>Input Iterators: Simplest and is used mostly in single-pass algorithms.<br>
+            Output Iterators: Same as input iterators but not used for traversing.<br>
+            Bidirectional Iterators: These iterators can move in both directions.<br>
+            Forward Iterators: Can be used only in the forward direction, one step at a time.<br>
+            Random Access Iterators: Same as pointers. Can be used to access any element randomly.<br>
+            Algorithms<br>
+            Algorithms are a set of functions or methods provided by STL that act on containers. These are built-in functions and can be used directly with the STL containers and iterators instead of writing our own algorithms.</p>
+            
+            <p>STL supports the following types of algorithms:</p>
+            
+            <p>Searching algorithms<br>
+            Sorting algorithms<br>
+            Modifying or manipulating algorithms<br>
+            Non-modifying algorithms<br>
+            Numeric algorithms<br>
+            Min/Max algorithms<br>
+            As each of the algorithm types suggests, these algorithms can be used to achieve different functionality in STL containers like searching, sorting, transforming the data in the containers, finding min/max value, etc.</p>
+            
+            <h3>Conclusion</h3>
+            This is the brief introduction of Standard Template Library. In our upcoming tutorials, we will learn more about each of the containers, algorithms, and iterators.</p>
+    
+</div>
+</body>
+
+</html>

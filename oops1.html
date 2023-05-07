@@ -1,0 +1,154 @@
+<!Doctype html>
+
+<head>
+	<title>
+		Real-world examples of OOP concepts
+	</title>
+	<link rel="stylesheet" href="stylehome.css" />
+	<script src="scripthome.js"></script>
+</head>
+
+<body>
+		<div class="leftnavbar">
+			<div class="header">
+				<div id="name">
+					<a href="home.html" style="color: black;
+    text-decoration: dashed;"> WeBlog </a>
+				</div>
+				<div id="form">
+					<form>
+						<input type="type" id="searchbar" placeholder="Search"></input>
+					</form>
+				</div>
+			</div>
+
+			<a href="home.html" style="color: black;
+    text-decoration: dashed;"><button id="Home" type="button">Home</button></a>
+			<button id="Blogs" type="button" onclick="Blogs()">Category</button>
+			<div id="menu" style="display:none">
+				<a href="home.html#mainTECH"><button id="tech" type="button">Tech</button></a>
+				<a href="home.html#mainDSA"><button id="DSA" type="button">DSA</button></a>
+				<a href="home.html#mainSTL"><button id="STL" type="button">STL</button></a>
+				<a href="home.html#mainOOPs"><button id="OOPs" type="button">OOPs</button></a>
+				</div>
+			<a href="http://localhost/WeBlog-main/contact.php"><button id="Contact" type="button">Contact</button></a>
+			<a href="privacy.html"><button id="Privacy" type="button">Privacy</button></a>
+			<a href="about.html"><button id="About" type="button">About</button></a>
+			<a href="terms and condition.html"><button id="tnc" type="button">Terms and conditions</button></a>
+			
+		</div>
+	<div class="info_page">
+        
+    <h1>Real-world examples of OOP concepts</h1>
+    
+  <div>
+    <div>
+        <div>
+            <div>
+                <div>
+                    <div>
+                        <article>
+                            <div>
+                                <div>
+                                    <section>
+                                        <div>
+                                            <div>
+                                                <div>
+                                                    
+                                                    <div>
+                                                        <h2>Have you ever wondered about where OOP concepts are practically being used in real-world?</h2>
+                                                    </div>
+                                                    <p>Object-Oriented Programming is considered as a design methodology for building non-rigid software. In OOPS, every logic is written to get our work done but represented in the form of Objects. OOP allows us to break our problems into a small unit of work that is represented via objects and their functions. We build functions around objects.</p>
+                                                    <p>There are mainly four pillars (features) of OOP. If all of these four features are presented in programming, the programming is called perfect Object-Oriented Programming.</p>
+                                                    <ol>
+                                                        <li><strong>Abstraction</strong></li>
+                                                        <li><strong>Encapsulation</strong></li>
+                                                        <li><strong>Inheritance</strong></li>
+                                                        <li><strong>Polymorphism</strong></li>
+                                                    </ol>
+                                                    <p>Let&rsquo;s consider an example of explaining each of these pillars so you can better understand Object-Oriented Programming.</p>
+                                                    <p>Before that, we need to know something.</p>
+                                                    <p>When we think of a mobile phone as an object, its basic functionality for which it was invented were Calling &amp; Receiving a call &amp; Messaging. But nowadays thousands of new features and models were added and the features and number of models are still growing.</p>
+                                                    <h1>Objects</h1>
+                                                    <p>Any real-world entity which can have some characteristics of which can perform some tasks is called Object. This object is also called an instance i.e. a copy of an entity in a programming language. If we consider the above example, a mobile manufacturing company can be an object. Each object can be different based on their characteristics. For example, here are two objects.</p>
+                                                    <ol>
+                                                        <li>Mobile mbl1 =&nbsp;<strong>new</strong> Mobile ();</li>
+                                                        <li>Mobile mbl2 =&nbsp;<strong>new</strong> Mobile ();</li>
+                                                    </ol>
+                                                    <h1>Class</h1>
+                                                    <p>A class in OOP is a plan which describes the object. We call it a blueprint of how the object should be represented. Mainly a class would consist of a name, attributes, and operations. Considering the above example, Mobile can be a class, which has some attributes like Profile Type, IMEI Number, Processor, and some more. It can have operations like Dial, Receive and SendMessage.</p>
+                                                    <p>There is some OOPS principle that needs to be satisfied while creating a class. This principle is called as SOLID where each letter has some specification. I won&rsquo;t be going into these points deeper. A single line of each explanation may clear you with some points.</p>
+                                                    <ol>
+                                                        <li>SRP (The Single Responsibility Principle) &mdash; A class should have one, and only one responsibility</li>
+                                                        <li>OCP (The Open Closed Principle) &mdash; You should be able to extend a classes behaviour, without modifying it. (Inheritance)</li>
+                                                        <li>LSP (The Liskov Substitution Principle) &mdash; Derived classes must be substitutable for their base classes. (Polymorphism)</li>
+                                                        <li>ISP (The Interface Segregation Principle) -Make finely chopped interface instead of the huge interface as the client cannot be forced to implement an interface which they don&rsquo;t use.</li>
+                                                        <li>DIP (The Dependency Inversion Principle) &mdash; Depend on abstractions, not on concretions. (Abstraction)</li>
+                                                    </ol>
+                                                    <p>If you want to learn more about SOLID principles, check out&nbsp;<a href="https://www.c-sharpcorner.com/article/solid-architectural-pattern-with-real-time-example/" rel="noopener ugc nofollow" target="_blank">SOLID Architectural Pattern with Real World Example</a>.</p>
+                                                    <p>Now, let&rsquo;s take a look at our class. A typical class based on the above discussion looks like the following in Visual Studio:</p>
+                                                    <h1>Abstraction</h1>
+                                                    <p>Abstraction allows us to expose limited data and functionality of objects publicly and hide the actual implementation. It is the most important pillar in OOPS. In our example of Mobile class and objects like Nokia, Samsung, iPhone.</p>
+                                                    <p>Some features of mobiles,</p>
+                                                    <ol>
+                                                        <li>Dialling a number call some method internally which concatenate the numbers and displays it on screen but what is it doing we don&rsquo;t know.</li>
+                                                        <li>Clicking on green button actual send signals to calling a person&rsquo;s mobile but we are unaware of how it is doing.</li>
+                                                    </ol>
+                                                    <p>This is called abstraction. In classes, we can create methods that can be called and used by the users of the class but users will have no idea what these methods do internally.</p>
+                                                    <h1>Encapsulation</h1>
+                                                    <p>Encapsulation is defined as the process of enclosing one or more details from the outside world through access right. It says how much access should be given to particular details. Both Abstraction &amp; Encapsulation works hand in hand because Abstraction says what details to be made visible and Encapsulation provides the level of access right to that visible details. i.e. &mdash; It implements the desired level of abstraction.</p>
+                                                    <p>Talking about Bluetooth which we usually have in our mobile. When we switch on a Bluetooth, I am able to connect to another mobile or Bluetooth enabled devices but I&rsquo;m not able to access the other mobile features like dialling a number, accessing inbox etc. This is because the Bluetooth feature is given some level of abstraction.</p>
+                                                    <p>Another point is when mobile A is connected with mobile B via Bluetooth whereas mobile B is already connected to mobile C then A is not allowed to connect C via B. This is because of accessibility restriction.</p>
+                                                    <h1>Polymorphism</h1>
+                                                    <p>Polymorphism can be defined as the ability to use the same name for doing different things. More precisely we say it as &lsquo;many forms of single entity&rsquo;. This play a vital role in the concept of OOPS.</p>
+                                                    <p>Let&rsquo;s say Samsung mobile has a 5MP camera available i.e. &mdash; it is having a functionality of CameraClick(). Now the same mobile is having Panorama mode available in-camera, so functionality would be the same but with mode. type is said to be Static polymorphism or Compile time polymorphism.</p>
+                                                    <p>Compile-time polymorphism the compiler knows which overloaded method it is going to call.</p>
+                                                    <p>The compiler checks the type and number of parameters passed to the method and decides which method to call and it will give an error if there are no methods that match the method signature of the method that is called at compile time.</p>
+                                                    <p>Another point wherein SendMessage was intended to send message to a single person at a time but suppose Nokia had given provision for sending a message to a group at once. i.e. &mdash; Overriding the functionality to send message to a group. This type is called Dynamic polymorphism or Runtime polymorphism.</p>
+                                                    <p>For overriding you need to set the method, which can be overridden to virtual &amp; its new implementation should be decorated with the override keyword.</p>
+                                                    <p>By runtime polymorphism, we can point to any derived class from the object of the base class at runtime that shows the ability of runtime binding.</p>
+                                                    <h1>Inheritance</h1>
+                                                    <p>Inheritance is the ability to extend the functionality from the base entity in new entity belonging to the same group. This will help us to reuse the functionality which is already defined before and extend into a new entity.</p>
+                                                    <p>Considering the example, the above figure 1.1 itself shows what is inheritance. Basic Mobile functionality is to send a message, dial and receive a call. So the brands of mobile are using this basic functionality by extending the mobile class functionality and adding their own new features to their respective brand.</p>
+                                                    <p>There are mainly 4 types of inheritance,</p>
+                                                    <ol>
+                                                        <li>Single level inheritance</li>
+                                                        <li>Multi-level inheritance</li>
+                                                        <li>Hierarchical inheritance</li>
+                                                        <li>Hybrid inheritance</li>
+                                                        <li>Multiple inheritances</li>
+                                                    </ol>
+                                                    <p><strong>Single level inheritance</strong></p>
+                                                    <p>In Single level inheritance, there is a single base class &amp; a single derived class i.e. - A base mobile features is extended by Samsung brand.</p>
+                                                    <p><strong>Multilevel inheritance</strong></p>
+                                                    <p>In Multilevel inheritance, there is more than one single level of derivation. i.e. - After base features are extended by Samsung brand. Now Samsung brand has manufactured its new model with newly added features or advanced OS like Android OS, v4.4.2 (KitKat). From generalization, getting into more specification.</p>
+                                                    <p><strong>Hierarchal inheritance</strong></p>
+                                                    <p>In this type of inheritance, multiple derived class would be extended from a base class, it&apos;s similar to single level inheritance but this time along with Samsung, Nokia is also taking part in inheritance.</p>
+                                                    <p><strong>Hybrid inheritance</strong></p>
+                                                    <p>Single, Multilevel, &amp; hierarchal inheritance all together construct a hybrid inheritance.</p>
+                                                    <h1>Interface</h1>
+                                                    <p>Multiple inheritances where the derived class will extend from multiple base classes.</p>
+                                                    <p>Samsung will use the function of multiple Phone (Mobile &amp; Telephone). This would create confusion for complier to understand which function to be called when an event in mobile is triggered like Dial () where Dial is available in both the Phone i.e. &mdash; (Mobile &amp; Telephone). To avoid this confusion C# came with the concept of the interface which is different from multiple inheritances actually.</p>
+                                                    <p>If we take an interface it is similar to a class but without implementation &amp; only declaration of properties, methods, delegates &amp; events. The interface actually enforces the class to have a standard contract to provide all implementation to the interface members. Then what&rsquo;s is the use of interface when they do not have any implementation? The answer is, they are helpful for having readymade contracts, only we need to implement functionality over this contract.</p>
+                                                    <p>I mean to say, Dial would remain Dial-in case of Mobile or Telephone. It won&rsquo;t be fair if we give a different name when its task is to Call the person.</p>
+                                                    <p>The interface is defined with the keyword &lsquo;interface&rsquo;.All properties &amp; methods within the interface should be implemented if it is been used. That&rsquo;s the rule of the interface.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </section>
+                                </div>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div><br></div>
+    </div>
+</div>
+
+    
+</div>
+</body>
+
+</html>

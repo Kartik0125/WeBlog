@@ -1,0 +1,104 @@
+<!Doctype html>
+
+<head>
+	<title>
+		Is Self-Supervised Learning the Future of AI?
+	</title>
+	<link rel="stylesheet" href="stylehome.css" />
+	<script src="scripthome.js"></script>
+</head>
+
+<body>
+		<div class="leftnavbar">
+			<div class="header">
+				<div id="name">
+					<a href="home.html" style="color: black;
+    text-decoration: dashed;"> WeBlog </a>
+				</div>
+				<div id="form">
+					<form>
+						<input type="type" id="searchbar" placeholder="Search"></input>
+					</form>
+				</div>
+			</div>
+
+			<a href="home.html" style="color: black;
+    text-decoration: dashed;"><button id="Home" type="button">Home</button></a>
+			<button id="Blogs" type="button" onclick="Blogs()">Category</button>
+			<div id="menu" style="display:none">
+				<a href="home.html#mainTECH"><button id="tech" type="button">Tech</button></a>
+				<a href="home.html#mainDSA"><button id="DSA" type="button">DSA</button></a>
+				<a href="home.html#mainSTL"><button id="STL" type="button">STL</button></a>
+				<a href="home.html#mainOOPs"><button id="OOPs" type="button">OOPs</button></a>
+				</div>
+			<a href="http://localhost/WeBlog-main/contact.php"><button id="Contact" type="button">Contact</button></a>
+			<a href="privacy.html"><button id="Privacy" type="button">Privacy</button></a>
+			<a href="about.html"><button id="About" type="button">About</button></a>
+			<a href="terms and condition.html"><button id="tnc" type="button">Terms and conditions</button></a>
+			
+		</div>
+	<div class="info_page">
+<h1>Is Self-Supervised Learning the Future of AI?</h1>
+
+<p>Self-supervised learning (SSL) is often called &lsquo;the future of artificial intelligence&rsquo;. Google and Facebook use this machine learning technique to come up with new benchmarks in the areas of natural language processing and computer vision.</p>
+
+<p>But what makes self-supervised learning special? Read this post to find out how self-supervised learning works and what advantages it provides for business applications.</p>
+
+<h3>What is self-supervised learning?</h3>
+Self-supervised learning is a machine learning technique that can be regarded as a mix between supervised and unsupervised learning methods. SSL models can learn from unlabeled sample data, which makes them similar to unsupervised learning models. SSL also uses neural networks.</p>
+
+<p>However, in the case of SSL, the neural network learns in two steps. First, it performs feature learning from the pool of data. Then, it uses self-supervision to finetune the model and improve. Usually, a self-supervised model predicts the hidden part or property of the object from the observed part and repeats this action several times until it can recognize the object from any angle. We will talk more about how it works later in this post.</p>
+
+<h3>Why use self-supervised learning?</h3>
+When we&rsquo;re talking about machine learning, usually three approaches come to mind: supervised, unsupervised, and reinforcement learning. I will only briefly mention them here but you can read more about the difference between them in Serokell&rsquo;s blog.</p>
+
+<p>In supervised learning, target labeling is conducted manually and a programmer is needed to monitor the training process. In unsupervised learning, the algorithm is exposed to a huge amount of data and has to search for patterns by using matrix decompositions, clustering, and similar methods. The unsupervised approach allows increased automatization but the accuracy of predictions may decrease.</p>
+
+<p>Supervision traditionally shows the best results: the more a human specialist is involved, the easier it is to uncover and fix the problem. But at scale, this approach is very expensive and slow. Only large corporations can afford to hire huge departments of people specifically for this job, and even then the efficiency remains quite low.</p>
+
+<p>Moreover, in the case of supervised learning, we can&rsquo;t talk about more generalist models that can do transfer learning and acquire new skills. It is true that transfer learning existed before self-supervision. In supervised learning, it is still a popular practice to apply transfer learning to narrower problems (e.g. train a classification model of 1000 classes in ImageNet and then use the same neural network to classify new labels like medical images in a smaller, labeled dataset). The problem is that there may be no relevant trained NNs/labeled datasets for the new task. Their skillset is conditioned by the labeled data. And it&rsquo;s simply not possible to label everything in the world.</p>
+
+<h3>What if we could come up with machine learning algorithms that were able to do the same things as supervised learning, but without the necessity of labeled data?</h3>
+
+<p>This is the goal of self-supervised learning. Instead of doing things like clustering or grouping, it operates on the structure of data to find patterns deeper than just similarities between objects. It would be a huge step on the way to human-level intelligence.</p>
+
+<h3>How does self-supervised learning work?</h3>
+How do SSL algorithms work?<br>
+Basically, SSL algorithms are made to obtain everything they need from the data itself. Self-supervised learning systems demand a lot of data and work with billions of parameters so the system has to be efficient in terms of both runtime and memory. Traditional architectures are not suitable for it.</p>
+
+<p>However, FAIR has designed a new type of algorithm called RegNets that is able to meet these requirements. They can predict an unobserved or hidden part in the input based on the information that is known to them. Since SSL is most often used in natural language processing, let us give you an example from this area.</p>
+
+<p>To make the algorithm understand natural language, we need to provide some examples. Then, we randomly hide some parts of a sentence or text so that the algorithm would have to predict what they are from the context. It is always possible to predict the hidden words from the remaining words since the vocabulary of a human language has its limits. For example, in a sentence like &lsquo;The cook puts (blank) in a birthday (blank).&rsquo; the algorithm can guess that we&rsquo;re talking about sugar and not salt, and a birthday cake, not a pizza. &lsquo;Birthday cake&rsquo; is a well-established expression that can be statistically associated with &lsquo;sugar&rsquo;, &lsquo;candles&rsquo;, and &lsquo;decorating&rsquo;.</p>
+
+<h3>How SSL works: example</h3>
+Self-supervised learning can be used to make predictions about video and audio too. But it&rsquo;s much harder than to work with text. SSL is able to rely on the structure of data to learn without labels and associate a score or a probability to all possible words in the vocabulary. &lsquo;Cake&rsquo; is more likely to be used with &lsquo;birthday&rsquo; than &lsquo;pizza&rsquo; so the first one is assigned a higher score.</p>
+
+<h3>What are the cons of self-supervised learning?</h3>
+Cons of SSL<br>
+If machines learn to interpret texts and images on their own, we can talk about a huge leap forward towards general artificial intelligence. But there are some limitations here too that we need to think about.</p>
+
+<p>The real world offers an unlimited number of possibilities: for example, a facial recognition system can&rsquo;t be built on the principle of simply eliminating faces that are not this face. We can&rsquo;t associate a possibility score to all life events because their number is potentially endless. New systems are created every day to conquer that limitation and one of them is SEER by Facebook that uses a large convolutional network trained with billions of examples.</p>
+
+<p>In the future, more tasks will be solved thanks to this technique. So it would be really nice if any programmer could deploy an SSL algorithm from their home. But it&rsquo;s not the case. Large corporations can afford to collect terabytes of data that help them train amazing models. They also have access to the hardware (their own or on the cloud) that a regular engineer can only dream of. But no single engineer would be able to do the same. For example, Facebook has recently hit a new benchmark with its computer vision system SEER. However, the dataset they used consisted of Instagram photos of users who didn&rsquo;t give their consent. It had to be deleted. That allows us to raise concerns about the re-democratization of machine learning based on SSL.</p>
+
+<h3>Where is SSL used?</h3>
+Current users of self-supervised learning techniques are places that have extremely huge datasets of information that they can&rsquo;t bother to label but would like to extract more information from.</p>
+
+<p>One of the most famous examples of SSL for natural language processing is Grammarly, an automated writing assistant. To suggest to you the best way to put a phrase and reword it, it has to understand the context by analyzing thousands of sentences.</p>
+
+<p>
+Grammarly has been named among industry leaders by Forbes and more than once was listed among the most innovative companies in the AI sector.</p>
+
+<p>GPT-3 by Open AI is another good example of self-supervised learning. The model has ingested like half of the Internet, and there is no way any team would be able to label that amount of data manually. Instead, GPT-3 learns to understand the structure of data such as texts or code to be able to generate new content.</p>
+
+<p>While GPT-3 still has to go a long way before it can create texts or code of a human level, it is already doing what was impossible for any ML model before it. As the Verge put it, &lsquo;Open AI&rsquo;s Latest Breakthrough Is Astonishingly Powerful, but Still Fighting Its Flaws&rsquo;. However, if the model will ever become better it will be thanks to understanding the context and improved transfer learning granted by SSL.</p>
+
+<h3>What are the perspectives of self-supervised learning?</h3>
+Perspectives of ML<br>
+We will see even more examples of using self-supervised learning in production, especially in computer vision. Today self-supervised learning is used for face recognition, cancer diagnostics, and, of course, interpretation and writing of texts.</p>
+
+<p>In the future, more products will use this technology: medical and industrial robots, virtual assistants, software systems of all sorts. SSL can cause a real revolution in the self-driving car market: after thousands of hours on the track, they will be able to accumulate knowledge and orient themselves even in unknown situations.</p>
+</div>
+</body>
+
+</html>
